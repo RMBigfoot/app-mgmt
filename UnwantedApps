@@ -1,1 +1,9 @@
 #Remove unwanted default apps from New installs of MSWindows 10/11 OS via PowerShell
+Get Skype: Get-AppxPackage -allusers *skypeapp* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunemusic* | Remove-AppxPackage
+Get-AppxPackage -allusers *zunevideo* | Remove-AppxPackage
+Get-AppxPackage -allusers *xbox* | Remove-AppxPackage
+Get-AppxPackage -allusers *spotify* | Remove-AppxPackage
+Get-AppxPackage -allusers *mcafee* | Remove-AppxPackage
+Get-AppxPackage -allusers *netflix* | Remove-AppxPackage
+Get-AppxPackage -allusers *gamingapp* | Remove-AppxPackage
